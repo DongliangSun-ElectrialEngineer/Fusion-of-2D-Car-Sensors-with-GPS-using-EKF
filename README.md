@@ -2,7 +2,7 @@
 
 # 🚗 2D Car Sensor Fusion with GPS Using Extended Kalman Filter (EKF)
 
-This repository contains the implementation of a 2D autonomous car positioning system using an Extended Kalman Filter (EKF). Sensor fusion is performed between noisy control inputs (steering & forward acceleration) and external GPS + magnetometer observations to estimate the vehicle's position, velocity, orientation, and input biases over time.
+This repository contains the implementation of a 2D autonomous car positioning system using an Extended Kalman Filter (EKF). Sensor fusion is performed between noisy control inputs (steering wheel control $(f_\theta)$ in rad/s)  & gas-break control signal $(f_a)$ in m/s³) and external GPS + magnetometer observations to estimate the vehicle's position, velocity, orientation, and input biases over time.
 ![](images/2D_car.png)
 
 ---
