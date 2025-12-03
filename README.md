@@ -10,23 +10,16 @@ This repository contains the implementation of a 2D autonomous car positioning s
 ## 🧠 EKF System Overview
 
 ### State Vector
-\[
-\mathbf{x} =
-\begin{bmatrix}
-E & N & V & a & \theta & b_a & b_\theta
-\end{bmatrix}^T
-\]
-
-Where:  
-- \(E, N\): Position (meters)  
-- \(V\): Forward velocity (m/s)  
-- \(a\): Acceleration (m/s²)  
-- \(\theta\): Azimuth angle (rad)  
-- \(b_a, b_\theta\): Sensor input biases  
+  
+- $(E, N)$: Position (meters)  
+- $(V)$: Forward velocity (m/s)  
+- $(a)$: Acceleration (m/s²)  
+- $(Azimuth)$: Azimuth angle (rad)  
+- $(b_a, b_\theta)$: Sensor input biases  
 
 ### Inputs
-- Steering control \(f_\theta\) (rad/s)
-- Acceleration control \(f_a\) (m/s³)
+- Acceleration control $(f_a)$ (m/s³)
+- Steering control $(f_\theta)$ (rad/s)
 
 ### Measurements (Noisy)
 - GPS East
